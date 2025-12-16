@@ -72,11 +72,11 @@ export function Footer() {
             <div className="space-y-3">
               <a href="tel:+15705606921" className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors">
                 <Phone className="w-5 h-5" />
-                +1 (570) 560-6921
+                +1 2482707522
               </a>
-              <a href="mailto:connect@suretouchleads.net" className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors">
+              <a href="mailto:connect@suretouchleads.in" className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors">
                 <Mail className="w-5 h-5" />
-                connect@suretouchleads.net
+                connect@suretouchleads.in
               </a>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5" />

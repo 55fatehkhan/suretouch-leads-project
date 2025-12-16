@@ -170,7 +170,7 @@ export default function Technology() {
               >
                 <a href="tel:+15705606921">
                   <Phone className="w-5 h-5" />
-                  +1 (570) 560-6921
+                  +1 2482707522
                 </a>
               </Button>
             </div>

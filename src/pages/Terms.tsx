@@ -150,8 +150,8 @@ export default function Terms() {
                   If you have any questions about these Terms and Conditions, please contact us:
                 </p>
                 <ul className="list-none text-muted-foreground space-y-2">
-                  <li><strong>Email:</strong> connect@suretouchleads.net</li>
-                  <li><strong>Phone:</strong> +1 (570) 560-6921</li>
+                  <li><strong>Email:</strong> connect@suretouchleads.in</li>
+                  <li><strong>Phone:</strong> +1 2482707522</li>
                   <li><strong>Location:</strong> United States</li>
                 </ul>
               </div>
