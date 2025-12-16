@@ -19,7 +19,7 @@ const faqs = [
       },
       {
         question: "Where is SureTouchLeads located?",
-        answer: "SureTouchLeads is headquartered in the United States and provides services nationwide. We also support remote operations for many positions.",
+        answer: "SureTouchLeads is headquartered in the Udyog Vihar 4, Near Airtel, 122015 Gurgaon and provides services nationwide. We also support remote operations for many positions.",
       },
     ],
   },
@@ -176,7 +176,7 @@ export default function FAQ() {
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="tel:+15705606921">
                   <Phone className="w-5 h-5" />
-                  +1 (570) 560-6921
+                  +1 2482707522
                 </a>
               </Button>
             </div>

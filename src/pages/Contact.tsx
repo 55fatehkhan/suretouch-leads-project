@@ -122,7 +122,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                     <a href="tel:+15705606921" className="text-primary hover:underline">
-                      +1 (570) 560-6921
+                      +1 2482707522
                     </a>
                   </div>
                 </div>
@@ -133,8 +133,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:connect@suretouchleads.net" className="text-primary hover:underline">
-                      connect@suretouchleads.net
+                    <a href="mailto:connect@suretouchleads.in" className="text-primary hover:underline">
+                      connect@suretouchleads.in
                     </a>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Location</h3>
-                    <p className="text-muted-foreground">United States</p>
+                    <p className="text-muted-foreground">Udyog Vihar 4, Near Airtel, 122015 Gurgaon</p>
                   </div>
                 </div>
                 

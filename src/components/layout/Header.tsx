@@ -10,7 +10,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Industries", href: "/industries" },
-  { name: "Technology", href: "/technology" },
+  { name: "Tech Services", href: "/technology" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -19,18 +19,18 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
+    <header className="sticky top-0 z-50">
       {/* Top bar */}
       <div className="bg-primary text-primary-foreground py-2 hidden md:block">
         <div className="container-custom flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
             <a href="tel:+15705606921" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
-              +1 (570) 560-6921
+              +1 2482707522
             </a>
-            <a href="mailto:connect@suretouchleads.net" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:connect@suretouchleads.in" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="w-4 h-4" />
-              connect@suretouchleads.net
+              connect@suretouchleads.in
             </a>
           </div>
           <div className="text-primary-foreground/80">
@@ -122,11 +122,11 @@ export function Header() {
               <div className="pt-4 space-y-2 text-sm text-muted-foreground">
                 <a href="tel:+15705606921" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  +1 (570) 560-6921
+                  +1 2482707522
                 </a>
-                <a href="mailto:connect@suretouchleads.net" className="flex items-center gap-2">
+                <a href="mailto:connect@suretouchleads.in" className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  connect@suretouchleads.net
+                  connect@suretouchleads.in
                 </a>
               </div>
             </div>
