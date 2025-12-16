@@ -168,7 +168,7 @@ export default function Technology() {
                 asChild
                 className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <a href="tel:+15705606921">
+                <a href="tel:+12482707522">
                   <Phone className="w-5 h-5" />
                   +1 2482707522
                 </a>
@@ -264,15 +264,15 @@ export default function Technology() {
                 Your Trusted Technology Partner
               </h2>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                We combine technical excellence with business acumen to deliver solutions that drive real results. Our proven track record spans over 500+ successful projects worldwide.
+                We combine technical excellence with business acumen to deliver solutions that drive real results. Our proven track record spans over 100+ successful projects worldwide.
               </p>
               
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "500+", label: "Projects Delivered" },
-                  { value: "50+", label: "Expert Developers" },
+                  { value: "100+", label: "Projects Delivered" },
+                  { value: "20+", label: "Expert Developers" },
                   { value: "98%", label: "Client Satisfaction" },
-                  { value: "10+", label: "Years Experience" },
+                  { value: "15+", label: "Years Experience" },
                 ].map((stat, index) => (
                   <div key={index} className="p-4 bg-secondary rounded-xl border border-border">
                     <div className="font-display text-3xl font-bold text-primary">{stat.value}</div>
@@ -334,7 +334,7 @@ export default function Technology() {
                 asChild
                 className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <a href="tel:+15705606921">
+                <a href="tel:+12482707522">
                   <Phone className="w-5 h-5" />
                   Call Us Now
                 </a>

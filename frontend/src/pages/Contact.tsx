@@ -12,6 +12,7 @@ import {
   Send,
   CheckCircle,
 } from "lucide-react";
+import { submitContactForm } from "@/services/contact.service";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -28,49 +29,59 @@ export default function Contact() {
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
-    
+
     if (!formData.name.trim()) {
       newErrors.name = "Name is required";
     }
-    
+
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = "Please enter a valid email address";
     }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = "Message is required";
     }
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-    });
-    
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      service: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+
+    try {
+      await submitContactForm({
+        ...formData,
+      });
+
+      toast({
+        title: "Message Sent!",
+        description: "We’ll get back to you within 24 hours.",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        service: "",
+        message: "",
+      });
+    } catch (error: any) {
+      toast({
+        title: "Submission Failed",
+        description: error.message || "Something went wrong",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -113,7 +124,7 @@ export default function Contact() {
               <p className="text-muted-foreground mb-8">
                 Have questions about our services? Ready to start a campaign? We'd love to hear from you.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -121,24 +132,24 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                    <a href="tel:+15705606921" className="text-primary hover:underline">
+                    <a href="tel:+12482707522" className="text-primary hover:underline">
                       +1 2482707522
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:connect@suretouchleads.in" className="text-primary hover:underline">
-                      connect@suretouchleads.in
+                    <a href="mailto:faiyaz@suretouchleads.com" className="text-primary hover:underline">
+                      faiyaz@suretouchleads.com
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-primary" />
@@ -148,7 +159,7 @@ export default function Contact() {
                     <p className="text-muted-foreground">Udyog Vihar 4, Near Airtel, 122015 Gurgaon</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Clock className="w-6 h-6 text-primary" />
@@ -159,18 +170,18 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Map Placeholder */}
-              <div className="mt-8 rounded-xl overflow-hidden border border-border">
+              {/* <div className="mt-8 rounded-xl overflow-hidden border border-border">
                 <div className="aspect-video bg-secondary flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="w-12 h-12 text-primary/30 mx-auto mb-2" />
                     <p className="text-muted-foreground text-sm">Map placeholder</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
-            
+
             {/* Contact Form */}
             <div className="lg:col-span-2 animate-slide-in-right">
               <div className="p-8 bg-card rounded-2xl border border-border shadow-custom-md">
@@ -180,7 +191,7 @@ export default function Contact() {
                 <p className="text-muted-foreground mb-8">
                   Fill out the form below and we'll get back to you within 24 hours.
                 </p>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
@@ -199,7 +210,7 @@ export default function Contact() {
                         <p className="text-sm text-destructive mt-1">{errors.name}</p>
                       )}
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                         Email Address *
@@ -218,7 +229,7 @@ export default function Contact() {
                       )}
                     </div>
                   </div>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
@@ -232,7 +243,7 @@ export default function Contact() {
                         placeholder="+1 (555) 000-0000"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
                         Company Name
@@ -246,7 +257,7 @@ export default function Contact() {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
                       Service of Interest
@@ -267,7 +278,7 @@ export default function Contact() {
                       <option value="other">Other</option>
                     </select>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                       Message *
@@ -285,7 +296,7 @@ export default function Contact() {
                       <p className="text-sm text-destructive mt-1">{errors.message}</p>
                     )}
                   </div>
-                  
+
                   <Button type="submit" variant="accent" size="lg" className="w-full" disabled={isSubmitting}>
                     {isSubmitting ? (
                       <>

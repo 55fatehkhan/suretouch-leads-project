@@ -24,13 +24,13 @@ export function Header() {
       <div className="bg-primary text-primary-foreground py-2 hidden md:block">
         <div className="container-custom flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+15705606921" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="tel:+12482707522" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone className="w-4 h-4" />
               +1 2482707522
             </a>
-            <a href="mailto:connect@suretouchleads.in" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:faiyaz@suretouchleads.com" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="w-4 h-4" />
-              connect@suretouchleads.in
+              faiyaz@suretouchleads.com
             </a>
           </div>
           <div className="text-primary-foreground/80">
@@ -120,13 +120,13 @@ export function Header() {
                 </Button>
               </div>
               <div className="pt-4 space-y-2 text-sm text-muted-foreground">
-                <a href="tel:+15705606921" className="flex items-center gap-2">
+                <a href="tel:+12482707522" className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
                   +1 2482707522
                 </a>
-                <a href="mailto:connect@suretouchleads.in" className="flex items-center gap-2">
+                <a href="mailto:faiyaz@suretouchleads.com" className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  connect@suretouchleads.in
+                  faiyaz@suretouchleads.com
                 </a>
               </div>
             </div>
