@@ -145,7 +145,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Location</h3>
-                    <p className="text-muted-foreground">United States</p>
+                    <p className="text-muted-foreground">Udyog Vihar 4, Near Airtel, 122015 Gurgaon</p>
                   </div>
                 </div>
                 

@@ -80,7 +80,7 @@ export function Footer() {
               </a>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5" />
-                United States
+                Udyog Vihar 4, Near Airtel, 122015 Gurgaon
               </div>
             </div>
           </div>

@@ -129,7 +129,7 @@ export default function Terms() {
                   8. Governing Law
                 </h2>
                 <p className="text-muted-foreground">
-                  These Terms shall be governed and construed in accordance with the laws of the United States of America, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+                  These Terms shall be governed and construed in accordance with the laws of the Udyog Vihar 4, Near Airtel, 122015 Gurgaon of America, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
                 </p>
               </div>
 
@@ -152,7 +152,7 @@ export default function Terms() {
                 <ul className="list-none text-muted-foreground space-y-2">
                   <li><strong>Email:</strong> connect@suretouchleads.in</li>
                   <li><strong>Phone:</strong> +1 2482707522</li>
-                  <li><strong>Location:</strong> United States</li>
+                  <li><strong>Location:</strong> Udyog Vihar 4, Near Airtel, 122015 Gurgaon</li>
                 </ul>
               </div>
             </div>
