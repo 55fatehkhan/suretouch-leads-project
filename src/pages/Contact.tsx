@@ -121,7 +121,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                    <a href="tel:+15705606921" className="text-primary hover:underline">
+                    <a href="tel:+12482707522" className="text-primary hover:underline">
                       +1 2482707522
                     </a>
                   </div>
@@ -133,8 +133,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:connect@suretouchleads.in" className="text-primary hover:underline">
-                      connect@suretouchleads.in
+                    <a href="mailto:faiyaz@suretouchleads.com" className="text-primary hover:underline">
+                      faiyaz@suretouchleads.com
                     </a>
                   </div>
                 </div>
@@ -161,14 +161,14 @@ export default function Contact() {
               </div>
               
               {/* Map Placeholder */}
-              <div className="mt-8 rounded-xl overflow-hidden border border-border">
+              {/* <div className="mt-8 rounded-xl overflow-hidden border border-border">
                 <div className="aspect-video bg-secondary flex items-center justify-center">
                   <div className="text-center">
                     <MapPin className="w-12 h-12 text-primary/30 mx-auto mb-2" />
                     <p className="text-muted-foreground text-sm">Map placeholder</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             
             {/* Contact Form */}

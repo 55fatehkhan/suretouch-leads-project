@@ -150,7 +150,7 @@ export default function Terms() {
                   If you have any questions about these Terms and Conditions, please contact us:
                 </p>
                 <ul className="list-none text-muted-foreground space-y-2">
-                  <li><strong>Email:</strong> connect@suretouchleads.in</li>
+                  <li><strong>Email:</strong> faiyaz@suretouchleads.com</li>
                   <li><strong>Phone:</strong> +1 2482707522</li>
                   <li><strong>Location:</strong> Udyog Vihar 4, Near Airtel, 122015 Gurgaon</li>
                 </ul>

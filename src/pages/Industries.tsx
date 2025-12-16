@@ -161,7 +161,7 @@ export default function Industries() {
                 <p className="text-muted-foreground">Industries Served</p>
               </div>
               <div className="p-6 bg-primary rounded-xl text-primary-foreground">
-                <div className="text-4xl font-display font-bold mb-2">500+</div>
+                <div className="text-4xl font-display font-bold mb-2">100+</div>
                 <p className="text-primary-foreground/80">Happy Clients</p>
               </div>
               <div className="p-6 bg-accent rounded-xl text-accent-foreground">
@@ -195,7 +195,7 @@ export default function Industries() {
                 </Link>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="tel:+15705606921">
+                <a href="tel:+12482707522">
                   <Phone className="w-5 h-5" />
                   +1 2482707522
                 </a>

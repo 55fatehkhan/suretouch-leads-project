@@ -78,8 +78,8 @@ const whyChooseUs = [
 ];
 
 const stats = [
-  { value: "10M+", label: "Calls Handled" },
-  { value: "500+", label: "Happy Clients" },
+  { value: "100M+", label: "Calls Handled" },
+  { value: "100+", label: "Happy Clients" },
   { value: "99.9%", label: "Uptime" },
   { value: "24/7", label: "Support" },
 ];
@@ -356,7 +356,7 @@ export default function Index() {
                 </Link>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="tel:+15705606921">
+                <a href="tel:+12482707522">
                   <Phone className="w-5 h-5" />
                   +1 2482707522
                 </a>

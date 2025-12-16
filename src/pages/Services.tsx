@@ -242,7 +242,7 @@ export default function Services() {
                 </Link>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
-                <a href="tel:+15705606921">
+                <a href="tel:+12482707522">
                   <Phone className="w-5 h-5" />
                   Call Us Now
                 </a>
