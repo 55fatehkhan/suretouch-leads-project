@@ -15,7 +15,6 @@ import {
   Play,
   Users,
   Zap,
-  CheckCircle,
   Code2,
   Shield,
   Clock,
@@ -136,27 +135,27 @@ export default function Technology() {
             alt="Developers working in modern office"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/85 to-slate-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
         </div>
         
         {/* Content */}
         <div className="container-custom relative z-10 py-20">
           <div className="max-w-3xl animate-slide-up">
-            <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium mb-6 backdrop-blur-sm border border-blue-400/30">
+            <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6 backdrop-blur-sm border border-accent/30">
               Technology & Services
             </span>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
               Build Powerful Digital Solutions with Our{" "}
-              <span className="text-blue-400">Technology Expertise</span>
+              <span className="text-accent">Technology Expertise</span>
             </h1>
-            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+            <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
               We design, develop, and scale secure digital products for startups and enterprises worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="xl" 
                 asChild
-                className="bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-600/30"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-accent"
               >
                 <Link to="/contact">
                   Start Your Project
@@ -167,7 +166,7 @@ export default function Technology() {
                 variant="outline" 
                 size="xl" 
                 asChild
-                className="border-slate-400 text-white hover:bg-white/10"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
                 <a href="tel:+15705606921">
                   <Phone className="w-5 h-5" />
@@ -180,16 +179,16 @@ export default function Technology() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="py-20 md:py-28 bg-secondary">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
               Our Services
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               Development Services
             </h2>
-            <p className="text-slate-600 text-lg">
+            <p className="text-muted-foreground text-lg">
               Comprehensive mobile and web development solutions tailored to your business needs.
             </p>
           </div>
@@ -198,16 +197,16 @@ export default function Technology() {
             {services.map((service, index) => (
               <div
                 key={service.title}
-                className="group p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-300 animate-slide-up"
+                className="group p-8 bg-card rounded-2xl border border-border shadow-custom-sm hover:shadow-custom-lg hover:border-primary/30 transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/30">
-                  <service.icon className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 rounded-2xl gradient-hero flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-glow">
+                  <service.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="font-display text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="font-display text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
               </div>
@@ -217,16 +216,16 @@ export default function Technology() {
       </section>
 
       {/* Industries Section */}
-      <section className="py-20 md:py-28 bg-slate-900">
+      <section className="py-20 md:py-28 gradient-dark">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-semibold mb-4">
+            <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-semibold mb-4">
               Industries
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
               Industries We Serve
             </h2>
-            <p className="text-slate-400 text-lg">
+            <p className="text-primary-foreground/70 text-lg">
               Domain expertise across multiple sectors to deliver industry-specific solutions.
             </p>
           </div>
@@ -235,16 +234,16 @@ export default function Technology() {
             {industries.map((industry, index) => (
               <div
                 key={industry.title}
-                className="group p-6 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-blue-500/50 hover:bg-slate-800 transition-all duration-300 animate-slide-up"
+                className="group p-6 bg-primary-foreground/5 rounded-xl border border-primary-foreground/10 hover:border-accent/50 hover:bg-primary-foreground/10 transition-all duration-300 animate-slide-up"
                 style={{ animationDelay: `${index * 80}ms` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4 group-hover:bg-blue-500/30 transition-colors">
-                  <industry.icon className="w-6 h-6 text-blue-400" />
+                <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-4 group-hover:bg-accent/30 transition-colors">
+                  <industry.icon className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-display text-lg font-semibold text-white mb-2">
+                <h3 className="font-display text-lg font-semibold text-primary-foreground mb-2">
                   {industry.title}
                 </h3>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <p className="text-primary-foreground/70 text-sm leading-relaxed">
                   {industry.description}
                 </p>
               </div>
@@ -254,17 +253,17 @@ export default function Technology() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-20 md:py-28 bg-background">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="animate-slide-in-left">
-              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+              <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
                 Why Choose Us
               </span>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Your Trusted Technology Partner
               </h2>
-              <p className="text-slate-600 text-lg mb-8 leading-relaxed">
+              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
                 We combine technical excellence with business acumen to deliver solutions that drive real results. Our proven track record spans over 500+ successful projects worldwide.
               </p>
               
@@ -275,9 +274,9 @@ export default function Technology() {
                   { value: "98%", label: "Client Satisfaction" },
                   { value: "10+", label: "Years Experience" },
                 ].map((stat, index) => (
-                  <div key={index} className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                    <div className="font-display text-3xl font-bold text-blue-600">{stat.value}</div>
-                    <div className="text-sm text-slate-600">{stat.label}</div>
+                  <div key={index} className="p-4 bg-secondary rounded-xl border border-border">
+                    <div className="font-display text-3xl font-bold text-primary">{stat.value}</div>
+                    <div className="text-sm text-muted-foreground">{stat.label}</div>
                   </div>
                 ))}
               </div>
@@ -287,17 +286,17 @@ export default function Technology() {
               {whyChooseUs.map((item, index) => (
                 <div
                   key={item.title}
-                  className="flex gap-4 p-5 bg-slate-50 rounded-xl border border-slate-100 hover:border-blue-200 hover:shadow-md transition-all duration-300"
+                  className="flex gap-4 p-5 bg-secondary rounded-xl border border-border hover:border-primary/30 hover:shadow-custom-md transition-all duration-300"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-display text-lg font-semibold text-slate-900 mb-1">
+                    <h3 className="font-display text-lg font-semibold text-foreground mb-1">
                       {item.title}
                     </h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -309,20 +308,20 @@ export default function Technology() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+      <section className="py-20 gradient-hero">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">
               Ready to Build Something Amazing?
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-primary-foreground/90 mb-8">
               Let's discuss your project and create a roadmap for success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="xl" 
                 asChild
-                className="bg-white text-blue-700 hover:bg-blue-50 shadow-lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-accent"
               >
                 <Link to="/contact">
                   Get Free Consultation
@@ -333,7 +332,7 @@ export default function Technology() {
                 variant="outline" 
                 size="xl" 
                 asChild
-                className="border-white/50 text-white hover:bg-white/10"
+                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
                 <a href="tel:+15705606921">
                   <Phone className="w-5 h-5" />
