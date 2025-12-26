@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-
+import { Analytics } from "@vercel/analytics/react";
 interface LayoutProps {
   children: ReactNode;
 }
@@ -14,6 +14,7 @@ export function Layout({ children }: LayoutProps) {
         {children}
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }

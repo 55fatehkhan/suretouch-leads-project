@@ -28,9 +28,9 @@ export function Header() {
               <Phone className="w-4 h-4" />
               +1 2482707522
             </a>
-            <a href="mailto:faiyaz@suretouchleads.com" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <a href="mailto:connectus@suretouchleads.com" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="w-4 h-4" />
-              faiyaz@suretouchleads.com
+              connectus@suretouchleads.com
             </a>
           </div>
           <div className="text-primary-foreground/80">
@@ -124,9 +124,9 @@ export function Header() {
                   <Phone className="w-4 h-4" />
                   +1 2482707522
                 </a>
-                <a href="mailto:faiyaz@suretouchleads.com" className="flex items-center gap-2">
+                <a href="mailto:connectus@suretouchleads.com" className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  faiyaz@suretouchleads.com
+                  connectus@suretouchleads.com
                 </a>
               </div>
             </div>

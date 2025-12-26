@@ -174,7 +174,18 @@ export default function AiProduct() {
                 <Link to="/contact">Start a Project <ArrowRight /></Link>
               </Button>
               <Button variant="heroOutline" asChild>
-                <Link to="/pricing">See Pricing</Link>
+                <a
+                  href="#pricingSection"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.getElementById('pricingSection');
+                    if (section) {
+                      section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  See Pricing
+                </a>
               </Button>
             </div>
 
@@ -242,7 +253,7 @@ export default function AiProduct() {
       </section>
 
       {/* PRICING */}
-      <section className="section-padding">
+      <section className="section-padding" id="pricingSection">
         <div className="container-custom text-center mb-12">
           <h2 className="text-4xl font-bold">Pricing</h2>
           <p className="text-muted-foreground">

@@ -129,7 +129,7 @@ export default function Terms() {
                   8. Governing Law
                 </h2>
                 <p className="text-muted-foreground">
-                  These Terms shall be governed and construed in accordance with the laws of the Udyog Vihar 4, Near Airtel, 122015 Gurgaon of America, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
+                  These Terms shall be governed and construed in accordance with the laws of the 5th Floor, Block D, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201309 of America, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.
                 </p>
               </div>
 
@@ -150,9 +150,9 @@ export default function Terms() {
                   If you have any questions about these Terms and Conditions, please contact us:
                 </p>
                 <ul className="list-none text-muted-foreground space-y-2">
-                  <li><strong>Email:</strong> faiyaz@suretouchleads.com</li>
+                  <li><strong>Email:</strong> connectus@suretouchleads.com</li>
                   <li><strong>Phone:</strong> +1 2482707522</li>
-                  <li><strong>Location:</strong> Udyog Vihar 4, Near Airtel, 122015 Gurgaon</li>
+                  <li><strong>Location:</strong> 5th Floor, Block D, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201309</li>
                 </ul>
               </div>
             </div>

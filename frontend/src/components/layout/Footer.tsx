@@ -74,13 +74,13 @@ export function Footer() {
                 <Phone className="w-5 h-5" />
                 +1 2482707522
               </a>
-              <a href="mailto:faiyaz@suretouchleads.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors">
+              <a href="mailto:connectus@suretouchleads.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-accent transition-colors">
                 <Mail className="w-5 h-5" />
-                faiyaz@suretouchleads.com
+                connectus@suretouchleads.com
               </a>
               <div className="flex items-center gap-3 text-primary-foreground/70">
                 <MapPin className="w-5 h-5" />
-                Udyog Vihar 4, Near Airtel, 122015 Gurgaon
+                5th Floor, Block D, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201309
               </div>
             </div>
           </div>

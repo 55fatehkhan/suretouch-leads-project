@@ -144,8 +144,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                    <a href="mailto:faiyaz@suretouchleads.com" className="text-primary hover:underline">
-                      faiyaz@suretouchleads.com
+                    <a href="mailto:connectus@suretouchleads.com" className="text-primary hover:underline">
+                      connectus@suretouchleads.com
                     </a>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Location</h3>
-                    <p className="text-muted-foreground">Udyog Vihar 4, Near Airtel, 122015 Gurgaon</p>
+                    <p className="text-muted-foreground">5th Floor, Block D, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201309</p>
                   </div>
                 </div>
 
@@ -203,7 +203,7 @@ export default function Contact() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="John Smith"
+                        placeholder="Your Name"
                         className={errors.name ? "border-destructive" : ""}
                       />
                       {errors.name && (
@@ -221,7 +221,7 @@ export default function Contact() {
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="john@company.com"
+                        placeholder="Your Email"
                         className={errors.email ? "border-destructive" : ""}
                       />
                       {errors.email && (
@@ -240,7 +240,7 @@ export default function Contact() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="Your Phone Number"
                       />
                     </div>
 
@@ -253,7 +253,7 @@ export default function Contact() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        placeholder="Company Inc."
+                        placeholder="Company Name"
                       />
                     </div>
                   </div>
@@ -288,7 +288,7 @@ export default function Contact() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell us about your project and requirements..."
+                      placeholder="Message..."
                       rows={5}
                       className={errors.message ? "border-destructive" : ""}
                     />

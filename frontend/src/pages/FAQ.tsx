@@ -19,7 +19,7 @@ const faqs = [
       },
       {
         question: "Where is SureTouchLeads located?",
-        answer: "SureTouchLeads is headquartered in the Udyog Vihar 4, Near Airtel, 122015 Gurgaon and provides services nationwide. We also support remote operations for many positions.",
+        answer: "SureTouchLeads is headquartered in the 5th Floor, Block D, Sector 63, Noida, Hazratpur Wajidpur, Uttar Pradesh 201309 and provides services nationwide. We also support remote operations for many positions.",
       },
     ],
   },
